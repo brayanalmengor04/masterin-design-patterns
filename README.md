@@ -17,8 +17,6 @@ Este repositorio está dedicado a la práctica de patrones de diseño en Java. L
     }
 ```
 **Uso práctico:** Es ideal cuando necesitas un solo objeto para coordinar acciones a lo largo del sistema, como una conexión a una base de datos o un manejador de configuraciones.
-- Ver mas!  `https://github.com//brayanalmengor04/masterin-design-patterns/tree/main/Singleton`.
-- Presione Aqui!  `[aquí]`
 
 ### 2. Factory Method
 **Propósito:** Proporcionar una interfaz para crear objetos en una superclase, mientras permite que las subclases alteren el tipo de objetos que se crean.
@@ -37,9 +35,6 @@ public class Main {
 }
 ``` 
 **Uso práctico:** Útil cuando el proceso de creación de objetos es complejo o cuando las clases concretas de los objetos creados no son conocidas por adelantado. Por ejemplo, en una fábrica de vehículos donde no sabes qué tipo de vehículo crear hasta el tiempo de ejecución.
-
-- Ver mas!  `https://github.com//brayanalmengor04/masterin-design-patterns/tree/main/FactoryMethod`.
-- Presione Aqui!  `[aquí]`
 
 ### 3. Observer
 **Propósito:** Definir una relación uno a muchos entre objetos de manera que, cuando uno cambie de estado, todos sus dependientes sean notificados y actualizados automáticamente.
