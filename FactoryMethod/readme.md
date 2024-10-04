@@ -2,6 +2,8 @@
 ---
 # Problema: Sistema de Transporte
 
+
+
 Imagina que estás desarrollando un sistema para una empresa de transporte que maneja distintos tipos de vehículos: autos, camiones y motocicletas. Cada tipo de vehículo tiene diferentes características, como la capacidad de pasajeros y el tipo de combustible. La empresa quiere agregar nuevos tipos de vehículos en el futuro sin alterar mucho el código existente.
 
 El problema aquí es que no queremos que la lógica de creación de estos vehículos esté esparcida por todo el código, ya que dificultaría el mantenimiento y la evolución del sistema. **Queremos centralizar y simplificar el proceso de creación de los vehículos**, de manera que el código cliente no dependa de las clases concretas de vehículos.
@@ -13,6 +15,8 @@ Este es un caso típico donde el **Factory Method** es útil. Con este patrón, 
 ## Objetivo
 
 El objetivo es crear un sistema en el que podamos pedir vehículos al "sistema de transporte" sin tener que preocuparnos por cuál es la clase concreta que se instancia. En su lugar, usaremos un método de fábrica para delegar esta responsabilidad.
+
+---
 
 ## 1. Interfaz Vehículo
 
@@ -28,6 +32,7 @@ public interface Vehiculo {
     void conducir();
 }
 ```
+---
 
 ### 2. Clases Concretas de Vehículos
 
@@ -41,10 +46,14 @@ public class Auto implements Vehiculo {
     }
 }
 ```
+---
+
 
 ### 3. Paquete `Factory`
 
 El paquete `factory` es donde se implementa el patrón **Factory Method**. Este patrón permite que la creación de objetos se centralice en una fábrica, que es responsable de instanciar los vehículos sin necesidad de que el cliente conozca los detalles internos de cómo se crean.
+
+---
 
 ### 4. Clase Abstracta `FabricaVehiculo`
 
@@ -55,6 +64,8 @@ public abstract class FabricaVehiculo {
     public abstract Vehiculo crearVehiculo();
 }
 ```
+
+---
 
 ### 5. Clases Concretas de Fábrica
 
@@ -68,6 +79,7 @@ public class FabricaAuto extends FabricaVehiculo {
     }
 }
 ```
+---
 
 ### 6. Ejemplo de Uso en el Método Main
 

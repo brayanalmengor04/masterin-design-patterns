@@ -5,14 +5,41 @@ Este repositorio está dedicado a la práctica de patrones de diseño en Java. L
 ## Patrones implementados
 
 ### 1. Singleton
-**Propósito:** Asegurar que una clase solo tenga una única instancia y proporcionar un punto global de acceso a ella.
+**Propósito:** Asegurar que una clase solo tenga una única instancia y proporcionar un punto global de acceso a ella. 
+```java
+    public class Main {
 
+    public static void main(String[] args) {
+
+        DataBaseGetConexion instancia1 = DataBaseGetConexion.getInstance();
+
+    }
+    }
+```
 **Uso práctico:** Es ideal cuando necesitas un solo objeto para coordinar acciones a lo largo del sistema, como una conexión a una base de datos o un manejador de configuraciones.
+- Ver mas!  `https://github.com//brayanalmengor04/masterin-design-patterns/tree/main/Singleton`.
+- Presione Aqui!  `[aquí]`
 
 ### 2. Factory Method
 **Propósito:** Proporcionar una interfaz para crear objetos en una superclase, mientras permite que las subclases alteren el tipo de objetos que se crean.
 
+
+### Ejemplo 
+En el método `main`, el cliente puede utilizar una fábrica concreta (por ejemplo, `FabricaAuto`) para crear un vehículo sin conocer su implementación interna. Luego, el cliente puede interactuar con el vehículo creado a través de la interfaz `Vehiculo`.
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        FabricaVehiculo fabricaAuto = new FabricaAuto();
+        Vehiculo auto = fabricaAuto.crearVehiculo();
+        auto.conducir();
+    }
+}
+``` 
 **Uso práctico:** Útil cuando el proceso de creación de objetos es complejo o cuando las clases concretas de los objetos creados no son conocidas por adelantado. Por ejemplo, en una fábrica de vehículos donde no sabes qué tipo de vehículo crear hasta el tiempo de ejecución.
+
+- Ver mas!  `https://github.com//brayanalmengor04/masterin-design-patterns/tree/main/FactoryMethod`.
+- Presione Aqui!  `[aquí]`
 
 ### 3. Observer
 **Propósito:** Definir una relación uno a muchos entre objetos de manera que, cuando uno cambie de estado, todos sus dependientes sean notificados y actualizados automáticamente.
