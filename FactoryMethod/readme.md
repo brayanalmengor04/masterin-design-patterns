@@ -1,15 +1,5 @@
-El README que has redactado está bastante bien estructurado y claro en cuanto a la explicación del **Factory Method** aplicado a un sistema de transporte. Solo hay algunos pequeños detalles que podrías mejorar para hacer el contenido más claro y fluido. Aquí te doy algunas sugerencias para pulirlo:
-
-### Sugerencias:
-
-1. **Claridad en los títulos**: Tal vez puedas cambiar algunos títulos para que sean más descriptivos.
-2. **Consistencia en las secciones**: Por ejemplo, entre las clases concretas de vehículos y las fábricas, usa la misma estructura de presentación.
-3. **Mejora de la introducción**: Quizás podrías reforzar la idea del "problema" de una manera más explícita y conectada con la solución propuesta.
-
-### Versión Mejorada
 
 ---
-
 # Problema: Sistema de Transporte
 
 Imagina que estás desarrollando un sistema para una empresa de transporte que maneja distintos tipos de vehículos: autos, camiones y motocicletas. Cada tipo de vehículo tiene diferentes características, como la capacidad de pasajeros y el tipo de combustible. La empresa quiere agregar nuevos tipos de vehículos en el futuro sin alterar mucho el código existente.
